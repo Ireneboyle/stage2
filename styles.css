@@ -1,0 +1,260 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:300,400");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Slab', sans-serif;
+}
+body{
+    background: rgb(153, 178, 194);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    position: relative;
+    width:100%;
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 50px;
+    background: rgb(255, 254, 254);
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.1);
+}
+.leftside{
+    position: relative;
+    background: rgb(219, 222, 224);
+    padding: 40px;
+}
+.profile-cont{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(59, 120, 173, 0.2);
+
+}
+.profile-img{
+    position: relative;
+    border-radius: 50%;
+    overflow: hidden;
+
+}
+/* .profile-img img{
+    position:absolute ;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
+.profile-cont h2{
+    color: rgb(2, 25, 46);
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align:center;
+    font-weight: 600;
+    line-height: 1.4em
+}
+.profile-cont h2 span{
+    font-size: 0.8em;
+    font-weight: 300;
+    color: rgb(17, 15, 145);
+
+}
+.contact-info{
+    padding-top: 40px;
+
+}
+.title{
+    color:rgb(2, 25, 46);
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+.contact-info ul{
+    position: relative;
+
+}
+.contact-info ul li{
+    position: relative;
+    list-style: none;
+    margin: 10px 0;
+    color: rgb(17, 15, 145);
+
+}
+.contact-info ul li .icon{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: rgb(41, 54, 65);
+}
+.contact-info ul li span{
+    color:rgb(17, 15, 145);
+    font-weight: 300;
+}
+.contact-info.education li{
+    margin-bottom: 15px;
+
+}
+.contact-info.education h5{
+    color:rgb(17, 15, 145);
+    font-weight: 500;
+}
+.contact-info.education h4:nth-child(3){
+    color:rgb(17, 15, 145);
+    font-weight: 500;
+} 
+.contact-info.education h4{
+    color:rgb(2, 25, 46);
+    font-weight: 500;
+}
+.contact-info.certification li{
+    margin-bottom: 15px;
+}
+.contact-info.certification h4{
+   
+    color:rgb;
+    font-weight: 500;
+}
+.logo ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.logo ul li{
+    list-style: none;
+    /* color:rgb(2, 25, 46);
+    font-weight: 500; */
+    margin:10px 0;
+}
+.logo img{
+    width:100px;
+    height:100px;
+}
+
+
+.rightside{
+    position: relative;
+    background: rgb(206, 222, 233);
+    padding: 40px;
+    
+}
+.about{
+    margin-bottom: 50px;
+
+}
+.about:last-child{
+    margin-bottom: 0;
+}
+.title2{
+    color:rgb(2, 25, 46);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+p{
+    color:rgb(9, 8, 82);
+    line-height: 2rem;
+    text-align: justify;
+    
+}
+.box{
+    display: flex;
+    flex-direction: row;
+    margin:20px 0;
+}
+.yearcompany{
+    min-width:150px;
+}
+.yearcompany h5{
+    text-transform: uppercase;
+    color:rgb(2, 25, 46);
+    font-weight:600;
+}
+.text h4{
+    text-transform: uppercase;
+    color: rgb(2, 25, 46);
+    font-size: 16px;
+
+}
+.skills .box2 {
+    position: relative;
+    width: 100%;
+    display:grid;
+    grid-template-columns: 150px 1fr;
+    justify-content: center;
+    align-items: center;
+} 
+.box2{
+       
+    
+    text-transform: uppercase;
+    color:rgb(2, 25, 46);
+    font-weight: 500;
+    line-height: 2rem;
+    
+
+}
+.percent{
+    position:relative;
+    width: 100%;
+    height: 10px;
+    background: rgb(214, 181, 181);
+
+}
+.percent div{
+    position: absolute;
+    top:0;
+    left:0;
+    height:100%;
+    background: rgb(240, 25, 25);
+}
+.interest ul{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.interest ul li{
+    list-style: none;
+    color:rgb(2, 25, 46);
+    font-weight: 500;
+    margin:10px 0;
+
+}
+.interest ul li .fa{
+    color:rgb(17, 15, 145);
+    font-size: 18px;
+    width: 20px;
+}
+
+@media (max-width:1000px){
+    .container{
+        margin: 10px;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .interest ul{
+        grid-template-columns: repeat(1,1fr);
+    }
+}
+@media (max-width:600px){
+    .box{
+        flex-direction: column;
+        
+    }
+    .yearcompany{
+        min-width: 150px;
+        margin-bottom: 5px;
+    }
+    .interest ul{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .skills .box2{
+        grid-template-columns: repeat(1,1fr);
+
+    }
+}
